@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Adrar",
+        "communes": [
+            "Adrar",
+            "Akabli",
+            "Aoulef",
+            "Reggane",
+            "Timimoun",
+            "Zaouiat Kounta"
+        ]
+    },
+    {
+        "name": "Chlef",
+        "communes": [
+            "Chlef",
+            "Tenes",
+            "Beni Haoua",
+            "Oued Fodda",
+            "El Karimia",
+            "Ouled Fares"
+        ]
+    },
+    {
+        "name": "Oran",
+        "communes": [
+            "Oran",
+            "Bir El Djir",
+            "Es Senia",
+            "Arzew",
+            "Gdyel",
+            "Ain El Turk"
+        ]
+    },
+    {
+        "name": "Alger",
+        "communes": [
+            "Bab El Oued",
+            "El Harrach",
+            "Rouiba",
+            "Zeralda",
+            "Bir Mourad Rais",
+            "Kouba"
+        ]
+    },
+    {
+        "name": "Blida",
+        "communes": [
+            "Blida",
+            "Boufarik",
+            "Mouzaia",
+            "Bougara",
+            "Ouled Yaich",
+            "Chebli"
+        ]
+    }
+]

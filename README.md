@@ -8,8 +8,15 @@
 
 Notes:
 
-- Dont need to send a PR, just fork the repo and work on your repo
-- Please keep the commits and the DB structure as it is
-- You are free to use any third party package or any UI dashboard
+-   Dont need to send a PR, just fork the repo and work on your repo
+-   Please keep the commits and the DB structure as it is
+-   You are free to use any third party package or any UI dashboard
 
 Good luck 😃
+
+# Command to run the app
+
+-   composer install ( To install needed packages )
+-   change your env file depend on your database and generate your key with php artisan key:generate
+-   php artisan app:setup ( to make migration into database, Fill dummy data which include 5000 stores and 100 packages for each )
+-   php artisan app:start (for start the two servers in one terminal, equal to npm start dev and php artisan serve )

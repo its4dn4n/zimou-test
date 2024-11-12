@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+/* Apply this class to the element you want to take up the whole screen */
+.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: for overlay effect */
+    z-index: 9999; /* Make sure it's on top of other content */
+}
+
+/* This disables scrolling on the body */
+body.no-scroll {
+    overflow: hidden;
+}
