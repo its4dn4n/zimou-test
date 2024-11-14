@@ -3,6 +3,15 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PackageController;
+use App\Exports\PackagesExport;
+use Maatwebsite\Excel\Facades\Excel;
+
+Route::post('/package', [PackageController::class, 'store']);
+
+Route::get('/packages/export', function() {
+    return Excel::download(new PackagesExport, 'packages.xlsx');
+});
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -22,3 +31,6 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+Route::get('/packages', [PackageController::class, 'index']);
+
+

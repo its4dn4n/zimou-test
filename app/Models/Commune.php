@@ -15,4 +15,8 @@ class Commune extends Model
     {
         return $this->belongsTo(Wilaya::class);
     }
+    public function package()
+    {
+        return $this->hasOne(Package::class);
+    }
 }
