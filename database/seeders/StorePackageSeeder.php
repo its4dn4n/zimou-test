@@ -15,7 +15,7 @@ class StorePackageSeeder extends Seeder
     public function run(): void
     {
         // Create 5,000 stores
-        Store::factory(1)->create()->each(function ($store) {
+        Store::factory(5000)->create()->each(function ($store) {
             // For each store, create 100 packages
             Package::factory(100)->create([
                 'store_id' => $store->id,
